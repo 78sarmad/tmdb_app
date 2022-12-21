@@ -22,7 +22,7 @@ class MovieDetailsScreen extends ConsumerStatefulWidget {
 class _MovieDetailsScreenState extends ConsumerState<MovieDetailsScreen> {
   @override
   Widget build(BuildContext context) {
-    final movieDetails = ref.watch(DataProvider.movieDetailsProvider(724495));
+    final movieDetails = ref.watch(DataProvider.movieDetailsProvider(widget.movieId));
 
     return Scaffold(
       body: movieDetails.when(
