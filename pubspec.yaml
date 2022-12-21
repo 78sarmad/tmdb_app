@@ -1,0 +1,45 @@
+name: tmdb_app
+description: Flutter Movie App
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.0.2 # state management
+  go_router: ^6.0.0 # route management
+  flutter_svg: ^1.1.6 # rendering svgs
+  http: ^0.13.5 # http requests
+  intl: ^0.18.0 # formatting facilities
+  cached_network_image: ^3.2.3 # caching images
+  video_player: ^2.4.10 # playing videos
+  chewie: ^1.3.6 # playing videos
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
